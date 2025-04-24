@@ -6,23 +6,28 @@
     <title>Your Page Title</title>
     <!-- Uncomment to link with associating stylesheet -->
     <!--<link rel="stylesheet" href="styles/bm-styles.css">-->
-    <link rel="stylesheet" href="styles/mw-styles.css">
+    <!--<link rel="stylesheet" href="styles/mw-styles.css">-->
+    <link rel="stylesheet" href="styles/bm-style_v2.css">
 
     <!-- You can link your JavaScript files here -->
     <!--<script src="script.js"></script>-->
 </head>
 <body>
 <header>
-    <img src="images/MW_mainLogo.png" alt="Mentally_Wrong Logo">
+
+    <!--How the Header should look for M_W-->
+    <!--<img src="images/MW_mainLogo.png" alt="Mentally_Wrong Logo">
     <nav class="MW_nav">
         <ul>
             <li><a href="mw-home.html">Home</a></li>
-            <li><a href="mw-about.html">About Me</a></li>
-            <!--<li><a href="mw-process.html">Resume</a></li>-->
+            <li><a href="mw-about.html">Watch Live</a></li>
+            
             <li><a href="mw-video.html">Resume</a></li>
             <li><a href="bm-home.html">BMillett Media</a></li>
         </ul>
-    </nav>
+    </nav>-->
+
+
 </header>
 
 <!-- About Section -->
@@ -40,8 +45,18 @@
         <div class="content-site">
             <h2>Twitch</h2>
             <a href="https://www.twitch.tv/mentally_wrong">
-                <img class="videoLogo" src="images/TwitchGlitchPurple.png" alt="Twitch Logo">
-				<iframe src="https://player.twitch.tv/?channel=mentally_wrong&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="720px" width="1280px"></iframe>
+                <div id="twitch-embed"></div>
+
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: "1920px",
+    height: "1080px",
+    channel: "mentally_wrong",
+    layout: "video", // or "chat" or "video-with-chat"
+    autoplay: false
+  });
+</script>
             </a>
             <p>What do you get when you take a designer, a massive backlog and take away his job? You get real genuine creation and passion. When you get a designer who sees the real artistic value of games from all walks of life, you get genuine thought and amazing moments from someone just like you. Come join me Monday Tuesday and Thursday at 8pm mst and help build a community of rejects who supports one another.<br>
             Sometimes, you gotta spend time with the ones you love the most. Some other times, you want to share the things that mean a lot to you with someone who means a lot to you. Come join me and my wife as we play games I think she would like together every Friday night at 8pm mst.</p>
@@ -86,5 +101,7 @@
     </nav>
 </footer>
 
+<!--Scripts here-->
+<script src="script/nav.js"></script>
 </body>
 </html>
