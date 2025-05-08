@@ -6,30 +6,17 @@
     <title>Your Page Title</title>
 
 	<!--Adjust favicon logo to be small enough to be used as a favicon. 16x16px -->
-	<link href="images/favicon_io/favicon.ico">
-
-	<link sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-	<link sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-    <!-- Remove Comments to link with associating stylesheet -->
 
     <!--<link rel="stylesheet" href="styles/bm-styles.css">-->
-	<link rel="stylesheet" href="styles/mw-styles.css">
+	
+	
+	<link rel="stylesheet" href="styles/mw-styles_v2.css">
 
 	<!-- You can link your JavaScript files here -->
     <!--<script src="script.js"></script>-->
 </head>
 <body>
 	<header>
-		<img src="images/MW_mainLogo.png" alt="Mentally_Wrong Logo">
-		<nav class="MW_nav">
-			<ul>
-				<li><a href="mw-home.html">Home</a></li>
-				<li><a href="mw-about.html">About Me</a></li>
-				<!--<li><a href="mw-process.html">Resume</a></li>-->
-				<li><a href="mw-video.html">Resume</a></li>
-				<li><a href="bm-home.html">BMillett Media</a></li>
-			</ul>
-		</nav>
 	</header>
     <!-- Basic content to replace -->
 	<!-- Modeled after bm-home.html -->
@@ -44,8 +31,16 @@
 			<h2>Twitch</h2>
 			<a href="https://www.twitch.tv/mentally_wrong"><img class="videoLogo" src="images/TwitchGlitchPurple.png" alt="Twitch Logo"></a>
 			<div class="videoplayer">
-				<!--Issues connecting. Get proper Embed code-->
-				<iframe src="https://player.twitch.tv/?channel=mentally_wrong&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="720px" width="1280px"></iframe>
+				<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: "1920px",
+    height: "1080px",
+    channel: "mentally_wrong",
+    layout: "video-with-chat", // or "chat" or "video-with-chat"
+    autoplay: false
+  });
+</script>
 		<p>Donations and tips are a huge help for me to keep the lights on and the party going! Anything helps and the funds will support the dream of building a community where fellow rejects and losers can call home. Funds will support the effort by assisting in getting new equipment such as capture cards and new microphones. Freedom isn't free as I work towards creative and financial indepenence for me to one day grow Mentally_Wrong to allow other creatives the space needed to create with without fear.</p>
 		<a href="https://streamlabs.com/mentally_wrong/tip"><button>Donate and Tip Here</button></a>
 	</iframe>
@@ -79,5 +74,7 @@
 			</ul>
 		</nav>
 	</footer>
+<!--Scripts here-->
+<script src="script/MW_nav.js"></script>
 </body>
 </html>
