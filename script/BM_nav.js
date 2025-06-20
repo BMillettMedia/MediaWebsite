@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <li><a href="bm-resume.html">Resume</a></li>
                     <li><a href="bm-portfolio.html">Portfolio</a></li>
                     <li><a href="mw-home.html">Mentally_Wrong</a></li>
+                    <li><a href="DC_home.html">Home</a></li>
                 </ul>
             </nav>
         `;
