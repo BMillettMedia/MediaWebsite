@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (header) {
         header.innerHTML = `
             <img src="images/BM_Images/BMillettMedia_transparent.png" alt="Site Logo">
-            <nav class="BM_nav">
+            <nav class="nav">
                 <ul>
                     <li><a href="bm-home.html">Home</a></li>
                     <li><a href="bm-about.html">About Me</a></li>
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Footer navigation (same or different content)
     if (footer) {
         footer.innerHTML = `
-            <nav class="BM_footer_nav">
+            <nav class="nav">
                 <ul>
                     <li><a href="bm-home.html">Home</a></li>
                     <li><a href="bm-about.html">About</a></li>

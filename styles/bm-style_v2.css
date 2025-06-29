@@ -71,7 +71,7 @@ nav {
     background-color: var(--primary-color);
     text-align: center;
     line-height: 3em;
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: #fff;
 }
 
@@ -126,20 +126,21 @@ footer ul li, footer p {
 }
 
 /* ========== Media and Content ========== */
-img, video {
-    max-width: 50%;
-    height: auto;
-    object-fit: cover;
+img:not(.logo),
+video {
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
 }
 
-.logo {
-    max-width: 25%;
-    height: auto;
-    object-fit: cover;
+img.logo {
+  max-width: 25% !important;
+  height: auto;
+  object-fit: contain; /* Optional: looks better for logos */
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 /* ========== Components ========== */
