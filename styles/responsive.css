@@ -1,0 +1,96 @@
+/* responsive-style.css */
+
+/* Base Styles */
+:root {
+  --primary-color: #396e94;
+  --secondary-color: #f6aa1c;
+  --accent-color: #841c26;
+  --background-color: #fff;
+  --heading-font: 'Josefin Sans', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  max-width: 150px;
+  height: auto;
+}
+
+nav ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+nav ul.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--heading-font);
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+main.center-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  nav ul.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 1em;
+  }
+
+  nav ul.nav-links.show {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
