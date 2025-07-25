@@ -1,15 +1,6 @@
 /* responsive-style.css */
 
 /* Base Styles */
-:root {
-  --primary-color: #396e94;
-  --secondary-color: #f6aa1c;
-  --accent-color: #841c26;
-  --background-color: #fff;
-  --heading-font: 'Josefin Sans', sans-serif;
-  --body-font: 'Roboto', sans-serif;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
