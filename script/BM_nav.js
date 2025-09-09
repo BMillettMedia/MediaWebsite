@@ -1,5 +1,5 @@
 // nav.js
-// Dynamically inserts navigation menu into header and footer
+// Dynamically inserts navigation menu into header and footer, with trigram toggle
 
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector("header");
@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Header navigation
     if (header) {
         header.innerHTML = `
-            <a href="bm-home.html"> <img src="images/BM_Images/BMillettMedia_transparent.png" alt="Site Logo" class="logo"> </a>
+            <a href="bm-home.html">
+                <img src="images/BM_Images/BMillettMedia_transparent.png" alt="Site Logo" class="logo">
+            </a>
             
             <button id="menu-toggle" aria-label="Toggle Menu">&#9776; Menu</button>
 
@@ -23,11 +25,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 </ul>
             </nav>
         `;
+
+        // ✅ Add trigram toggle functionality
+        const toggleButton = header.querySelector("#menu-toggle");
+        const nav = header.querySelector(".nav");
+
+        if (toggleButton && nav) {
+            toggleButton.addEventListener("click", () => {
+                nav.classList.toggle("show");
+            });
+        }
     } else {
         console.warn("No <header> found for navigation.");
     }
 
-    // Footer navigation (same or different content)
+    // Footer navigation
     if (footer) {
         footer.innerHTML = `
             <nav class="nav">
