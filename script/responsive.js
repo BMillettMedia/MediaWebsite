@@ -3,17 +3,12 @@
 // =========================
 function adjustFontSize() {
   var screenWidth = window.innerWidth;
-  var baseFontSize = 16; // Base font size in pixels
-  var scaleFactor = screenWidth / 1200; // Adjust scale factor as needed
-
-  // Calculate adjusted font size
+  var baseFontSize = 16;
+  var scaleFactor = screenWidth / 1200;
   var adjustedFontSize = baseFontSize * scaleFactor;
-
-  // Apply adjusted font size to body element
   document.body.style.fontSize = adjustedFontSize + "px";
 }
 
-// Call adjustFontSize() on resize + initial load
 window.addEventListener("resize", adjustFontSize);
 adjustFontSize();
 
@@ -22,11 +17,11 @@ adjustFontSize();
 // =========================
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
+  const nav = document.querySelector(".nav");
 
-  if (toggleButton && navLinks) {
+  if (toggleButton && nav) {
     toggleButton.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
+      nav.classList.toggle("show"); // Toggle visibility
     });
   }
 });

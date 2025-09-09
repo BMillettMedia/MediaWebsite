@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (header) {
         header.innerHTML = `
             <a href="bm-home.html"> <img src="images/BM_Images/BMillettMedia_transparent.png" alt="Site Logo" class="logo"> </a>
+            
+            <button id="menu-toggle" aria-label="Toggle Menu">&#9776; Menu</button>
+
             <nav class="nav">
                 <ul>
                     <li><a href="bm-home.html">Home</a></li>

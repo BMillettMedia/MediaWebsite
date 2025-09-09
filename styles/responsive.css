@@ -132,3 +132,77 @@ footer {
     color: white;
   }
 }
+
+/* ============================
+   Base Navigation (Desktop First)
+   ============================ */
+.nav ul {
+  display: flex;              /* horizontal row */
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+}
+
+.nav ul li {
+  margin: 0 1em;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--heading-font);
+}
+
+/* Hamburger button (hidden on desktop) */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ============================
+   Mobile Navigation
+   ============================ */
+@media (max-width: 768px) {
+  /* Show hamburger */
+  #menu-toggle {
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Hide nav list by default */
+  .nav ul {
+    display: none;
+    flex-direction: column;   /* stack top-to-bottom */
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Show nav list when .show is toggled */
+  .nav.show ul {
+    display: flex;
+  }
+
+  .nav ul li {
+    text-align: center;
+    padding: 12px 0;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav ul li:first-child {
+    border-top: none;
+  }
+}
+
+.nav {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
