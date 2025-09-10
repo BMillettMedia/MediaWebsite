@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <nav class="MW_nav">
                 <ul>
                     <li><a href="mw-home.html">Home</a></li>
-                    <li><a href="mw-about.html">Watch Live</a></li>
-                    <!--<li><a href="mw-process.html">Resume</a></li>-->
-                    <li><a href="mw-video.html">Resume</a></li>
+                    <li><a href="mw-about.html">About Me</a></li>
+                    <!--<li><a href="mw-process.html">Our Process</a></li>-->
+                    <li><a href="mw-video.html">Videos</a></li>
                     <li><a href="bm-home.html">BMillett Media</a></li>
                     <li><a href="DC_home.html">Digital Cactus</a></li>
                 </ul>
@@ -45,13 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
             <nav class="MW_nav">
                 <ul>
                     <li><a href="mw-home.html">Home</a></li>
-                    <li><a href="mw-about.html">Watch Live</a></li>
-                    <!--<li><a href="mw-process.html">Resume</a></li>-->
-                    <li><a href="mw-video.html">Resume</a></li>
+                    <li><a href="mw-about.html">About Me</a></li>
+                    <!--<li><a href="mw-process.html">Our Process</a></li>-->
+                    <li><a href="mw-video.html">Videos</a></li>
                     <li><a href="bm-home.html">BMillett Media</a></li>
                     <li><a href="DC_home.html">Digital Cactus</a></li>
                 </ul>
-                <p>&copy; ${new Date().getFullYear()} BMillett Media. All rights reserved.</p>
+                <p>&copy; BMillett Media. All rights reserved.</p>
             </nav>
         `;
     } else {
