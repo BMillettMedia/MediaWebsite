@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <!--<li><a href="mw-process.html">Resume</a></li>-->
                     <li><a href="mw-video.html">Resume</a></li>
                     <li><a href="bm-home.html">BMillett Media</a></li>
-                    <li><a href="DC_home.html">Home</a></li>
+                    <li><a href="DC_home.html">Digital Cactus</a></li>
                 </ul>
             </nav>
         `;
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <!--<li><a href="mw-process.html">Resume</a></li>-->
                     <li><a href="mw-video.html">Resume</a></li>
                     <li><a href="bm-home.html">BMillett Media</a></li>
-                    <li><a href="DC_home.html">Home</a></li>
+                    <li><a href="DC_home.html">Digital Cactus</a></li>
                 </ul>
                 <p>&copy; ${new Date().getFullYear()} BMillett Media. All rights reserved.</p>
             </nav>

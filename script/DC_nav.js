@@ -9,19 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
     if (header) {
         header.innerHTML = `
             <a href="bm-home.html">
-                <img src="images/MW_mainLogo.png" alt="Mentally_Wrong Logo" class="logo"></img>
+                <img src="images/DC-Logo-Temp.png" alt="Digital Cactus Logo" class="logo"></img>
             </a>
             
             <button id="menu-toggle" aria-label="Toggle Menu">&#9776; Menu</button>
 
-            <nav class="MW_nav">
+            <nav class="DC_nav">
                 <ul>
-                    <li><a href="mw-home.html">Home</a></li>
-                    <li><a href="mw-about.html">Watch Live</a></li>
-                    <!--<li><a href="mw-process.html">Resume</a></li>-->
-                    <li><a href="mw-video.html">Resume</a></li>
-                    <li><a href="bm-home.html">BMillett Media</a></li>
                     <li><a href="DC_home.html">Home</a></li>
+                    <li><a href="DC-about.html">About Me</a></li>
+                    <li><a href="DC-portfolio.html">Portfolio</a></li>
+                    <li><a href="DC-offers.html">Offers</a></li>
+                    <li><a href="mw-home.html">Mentally_Wrong</a></li>
+                    <li><a href="bm-home.html">BMillett Media</a></li>
                 </ul>
             </nav>
         `;
@@ -42,14 +42,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Footer navigation
     if (footer) {
         footer.innerHTML = `
-            <nav class="MW_nav">
+            <nav class="DC_nav">
                 <ul>
-                    <li><a href="mw-home.html">Home</a></li>
-                    <li><a href="mw-about.html">Watch Live</a></li>
-                    <!--<li><a href="mw-process.html">Resume</a></li>-->
-                    <li><a href="mw-video.html">Resume</a></li>
-                    <li><a href="bm-home.html">BMillett Media</a></li>
                     <li><a href="DC_home.html">Home</a></li>
+                    <li><a href="DC-about.html">About Me</a></li>
+                    <li><a href="DC-portfolio.html">Portfolio</a></li>
+                    <li><a href="DC-offers.html">Offers</a></li>
+                    <li><a href="mw-home.html">Mentally_Wrong</a></li>
+                    <li><a href="bm-home.html">BMillett Media</a></li>
                 </ul>
                 <p>&copy; ${new Date().getFullYear()} BMillett Media. All rights reserved.</p>
             </nav>
