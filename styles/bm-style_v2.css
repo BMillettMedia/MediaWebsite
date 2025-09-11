@@ -138,6 +138,9 @@ img.logo {
   max-width: 25% !important;
   height: auto;
   object-fit: contain; /* Optional: looks better for logos */
+   user-select: none;     /* prevents text-like selection */
+  -webkit-user-drag: none; /* prevents dragging in Chrome/Safari */
+  pointer-events: auto;  /* still allows clicking if it's wrapped in <a> */
 }
 
 figure {
