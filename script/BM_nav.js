@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Header navigation
     if (header) {
         header.innerHTML = `
-            <a href="bm-home.html">
+            <a href="bm-home.html" class="logo">
                 <img src="images/BM_Images/BMillettMedia_transparent.png" alt="Site Logo" class="logo">
             </a>
             

@@ -143,6 +143,14 @@ img.logo {
   pointer-events: auto;  /* still allows clicking if it's wrapped in <a> */
 }
 
+/* Prevent logo from being highlighted, dragged, or selected */
+.logo {
+  user-select: none;     /* prevents text-like selection */
+  -webkit-user-drag: none; /* prevents dragging in Chrome/Safari */
+  pointer-events: auto;  /* still allows clicking if it's wrapped in <a> */
+}
+
+
 figure {
   margin: 0;
 }
